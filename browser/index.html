@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src='/angular/angular.js'></script>
+	<script src='/angular-ui-router/release/angular-ui-router.js'></script>
+	<link rel="stylesheet" type="text/css" href="/bootstrap/dist/css/bootstrap.css">
+  <!-- inject:js -->
+  <script src="/browser/app.js"></script>
+  <script src="/browser/routes.js"></script>
+  <script src="/browser/directives/appNav.js"></script>
+  <script src="/browser/services/AuthService.js"></script>
+  <!-- endinject -->
+</head>
+<body ng-app='app'>
+  <div class='container'>
+	<h1> Welcome! </h1>
+  <app-nav></app-nav>
+  <ui-view></ui-view>
+  </div>
+</body>
+</html>
